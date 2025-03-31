@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<signos>
+    <signo>
+        <dataInicio>21/03</dataInicio>
+        <dataFim>20/04</dataFim>
+        <signoNome>Áries</signoNome>
+        <descricao>
+            Arianos são pioneiros, corajosos e cheios de energia. Governados por Marte, são líderes naturais, apaixonados e independentes. Adoram desafios e não têm medo de correr riscos. Sua franqueza e impulsividade podem ser admiráveis ou desafiadoras.
+        </descricao>
+        <imagem>assets/imgs/aries.png</imagem>
+    </signo>
+    <signo>
+        <dataInicio>21/04</dataInicio>
+        <dataFim>20/05</dataFim>
+        <signoNome>Touro</signoNome>
+        <descricao>
+            Taurinos são práticos, pacientes e apreciam conforto e segurança. Governados por Vênus, são leais, confiáveis e têm um forte senso de valores. Adoram a beleza, a arte e os prazeres da vida. Sua teimosia e apego podem ser vistos como qualidades ou defeitos.
+        </descricao>
+        <imagem>assets/imgs/touro.png</imagem>
+    </signo>
+    <signo>
+        <dataInicio>21/05</dataInicio>
+        <dataFim>20/06</dataFim>
+        <signoNome>Gêmeos</signoNome>
+        <descricao>
+            Geminianos são comunicativos, curiosos e adaptáveis. Governados por Mercúrio, são intelectuais, versáteis e gostam de variedade e novidades. Adoram conversar, aprender e trocar ideias. Sua dualidade e inconstância podem ser fascinantes ou irritantes.
+        </descricao>
+        <imagem>assets/imgs/gemeos.png</imagem>
+    </signo>
+    <signo>
+        <dataInicio>21/06</dataInicio>
+        <dataFim>22/07</dataFim>
+        <signoNome>Câncer</signoNome>
+        <descricao>
+            Cancerianos são emocionais, intuitivos e protetores. Governados pela Lua, são ligados à família, sensíveis e têm um forte senso de empatia. Adoram cuidar dos outros e criar um ambiente acolhedor. Sua melancolia e apego ao passado podem ser compreensíveis ou sufocantes.
+        </descricao>
+        <imagem>assets/imgs/cancer.png</imagem>
+    </signo>
+    <signo>
+        <dataInicio>23/07</dataInicio>
+        <dataFim>22/08</dataFim>
+        <signoNome>Leão</signoNome>
+        <descricao>
+            Leoninos são confiantes, generosos e gostam de ser o centro das atenções. Governados pelo Sol, são criativos, apaixonados e têm um forte senso de orgulho. Adoram brilhar, inspirar e liderar. Sua vaidade e autoritarismo podem ser encantadores ou irritantes.
+        </descricao>
+        <imagem>assets/imgs/leao.png</imagem>
+    </signo>
+    <signo>
+        <dataInicio>23/08</dataInicio>
+        <dataFim>22/09</dataFim>
+        <signoNome>Virgem</signoNome>
+        <descricao>
+            Virginianos são analíticos, práticos e prestativos. Governados por Mercúrio, são organizados, detalhistas e têm um forte senso de responsabilidade. Adoram trabalhar, servir e aperfeiçoar. Seu perfeccionismo e criticidade podem ser admiráveis ou irritantes.
+        </descricao>
+        <imagem>assets/imgs/virgem.png</imagem>
+    </signo>
+    <signo>
+        <dataInicio>23/09</dataInicio>
+        <dataFim>22/10</dataFim>
+        <signoNome>Libra</signoNome>
+        <descricao>
+            Librianos são diplomáticos, justos e apreciam harmonia e beleza. Governados por Vênus, são sociáveis, charmosos e têm um forte senso de equilíbrio. Adoram a paz, a justiça e a estética. Sua indecisão e superficialidade podem ser compreensíveis ou frustrantes.
+        </descricao>
+        <imagem>assets/imgs/libra.png</imagem>
+    </signo>
+    <signo>
+        <dataInicio>23/10</dataInicio>
+        <dataFim>21/11</dataFim>
+        <signoNome>Escorpião</signoNome>
+        <descricao>
+            Escorpianos são intensos, apaixonados e misteriosos. Governados por Plutão e Marte, são determinados, corajosos e têm um forte senso de intuição. Adoram o poder, a transformação e o mistério. Sua obsessão e vingança podem ser temíveis ou fascinantes.
+        </descricao>
+        <imagem>assets/imgs/escorpiao.png</imagem>
+    </signo>
+    <signo>
+        <dataInicio>22/11</dataInicio>
+        <dataFim>21/12</dataFim>
+        <signoNome>Sagitário</signoNome>
+        <descricao>
+            Sagitarianos são otimistas, aventureiros e filosóficos. Governados por Júpiter, são honestos, independentes e têm um forte senso de liberdade. Adoram viajar, aprender e expandir seus horizontes. Sua impaciência e imprudência podem ser empolgantes ou problemáticas.
+        </descricao>
+        <imagem>assets/imgs/sagitario.png</imagem>
+    </signo>
+    <signo>
+        <dataInicio>22/12</dataInicio>
+        <dataFim>20/01</dataFim>
+        <signoNome>Capricórnio</signoNome>
+        <descricao>
+            Capricornianos são ambiciosos, disciplinados e responsáveis. Governados por Saturno, são práticos, pacientes e têm um forte senso de dever. Adoram o sucesso, o reconhecimento e a tradição. Seu pessimismo e rigidez podem ser compreensíveis ou limitantes.
+        </descricao>
+        <imagem>assets/imgs/capricornio.png</imagem>
+    </signo>
+    <signo>
+        <dataInicio>21/01</dataInicio>
+        <dataFim>19/02</dataFim>
+        <signoNome>Aquário</signoNome>
+        <descricao>
+            Aquarianos são inovadores, independentes e humanitários. Governados por Urano e Saturno, são originais, progressistas e têm um forte senso de justiça social. Adoram a liberdade, a igualdade e a tecnologia. Sua rebeldia e excentricidade podem ser inspiradoras ou incompreensíveis.
+        </descricao>
+        <imagem>assets/imgs/aquario.png</imagem>
+    </signo>
+    <signo>
+        <dataInicio>20/02</dataInicio>
+        <dataFim>20/03</dataFim>
+        <signoNome>Peixes</signoNome>
+        <descricao>
+            Piscianos são sensíveis, intuitivos e compassivos. Governados por Netuno e Júpiter, são sonhadores, românticos e têm um forte senso de empatia. Adoram a arte, a espiritualidade e o amor incondicional. Sua idealização e escapismo podem ser encantadores ou prejudiciais.
+        </descricao>
+        <imagem>assets/imgs/peixes.png</imagem>
+    </signo>
+</signos>
