@@ -51,7 +51,7 @@
                     <a class="nav-link btn-plastic" href="show_zodiac_sign.php?data_nascimento=21/01/2025"><img src="assets/imgs/aquario.png" alt="Aquário" class="zodiac-icon"></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link btn-plastic" href="show_zodiac_sign.php?data_nascimento=19/02/2025"><img src="assets/imgs/peixes.png" alt="Peixes" class="zodiac-icon"></a>
+                    <a class="nav-link btn-plastic" href="show_zodiac_sign.php?data_nascimento=20/02/2025"><img src="assets/imgs/peixes.png" alt="Peixes" class="zodiac-icon"></a>
                 </li>
             </ul>
         </div>
