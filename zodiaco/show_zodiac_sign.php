@@ -8,7 +8,6 @@
                 if (isset($_POST['data_nascimento'])) {
                     $data_nascimento = $_POST['data_nascimento'];
                     $data_nascimento_obj = DateTime::createFromFormat('Y-m-d', $data_nascimento);
-                    $data_nascimento_formatada = $data_nascimento_obj->format('d/m/Y');
                 } elseif (isset($_GET['data_nascimento'])) {
                     $data_nascimento = $_GET['data_nascimento'];
                     $data_nascimento_obj = DateTime::createFromFormat('d/m/Y', $data_nascimento);
@@ -35,29 +34,26 @@
                 $signo_encontrado = false;
 
                 foreach ($signos->signo as $signo) {
-                    $dataInicio = DateTime::createFromFormat('d/m', $signo->dataInicio);
-                    $dataFim = DateTime::createFromFormat('d/m', $signo->dataFim);
+                    $dataInicio = DateTime::createFromFormat('d/m', (string) $signo->dataInicio);
+                    $dataFim = DateTime::createFromFormat('d/m', (string) $signo->dataFim);
 
                     if ($dataInicio === false || $dataFim === false) {
-                        echo "Erro ao criar datas de início ou fim para o signo: " . $signo->signoNome . "<br>";
+                        echo "Erro ao processar datas do signo: " . $signo->signoNome . "<br>";
                         continue;
                     }
 
                     $ano_nascimento = $data_nascimento_obj_formatado->format('Y');
-                    $mes_nascimento = $data_nascimento_obj_formatado->format('m');
 
-                    $ano_inicio = $ano_nascimento;
-                    $ano_fim = $ano_nascimento;
+                    // Define as datas no ano de nascimento
+                    $dataInicio->setDate($ano_nascimento, $dataInicio->format('m'), $dataInicio->format('d'));
+                    $dataFim->setDate($ano_nascimento, $dataFim->format('m'), $dataFim->format('d'));
 
-                    if ($mes_nascimento == 1 && $dataFim->format('m') == 12) {
-                        $ano_inicio = $ano_nascimento - 1;
-                    } elseif ($mes_nascimento == 12 && $dataFim->format('m') == 1) {
-                        $ano_fim = $ano_nascimento + 1;
+                    // Ajuste para signos que atravessam o ano
+                    if ($dataInicio->format('m') == 12 && $dataFim->format('m') == 1) {
+                        $dataFim->modify('+1 year');
                     }
 
-                    $dataInicio->setDate($ano_inicio, $dataInicio->format('m'), $dataInicio->format('d'));
-                    $dataFim->setDate($ano_fim, $dataFim->format('m'), $dataFim->format('d'));
-
+                    // Verificação corrigida
                     if ($data_nascimento_obj_formatado >= $dataInicio && $data_nascimento_obj_formatado <= $dataFim) {
                         $signo_encontrado = true;
                         $signo_encontrado_data = $signo;
@@ -68,9 +64,11 @@
                 if ($signo_encontrado) {
                     ?>
                     <div class="text-center">
-                        <h3>Seu signo é: <?php echo $signo_encontrado_data->signoNome; ?></h3>
-                        <img src="<?php echo $signo_encontrado_data->imagem; ?>" alt="<?php echo $signo_encontrado_data->signoNome; ?>" class="img-fluid rounded mb-3" style="max-height: 200px;">
-                        <p><?php echo $signo_encontrado_data->descricao; ?></p>
+                        <h3>Seu signo é: <?php echo htmlspecialchars($signo_encontrado_data->signoNome); ?></h3>
+                        <img src="<?php echo htmlspecialchars($signo_encontrado_data->imagem); ?>" 
+                             alt="<?php echo htmlspecialchars($signo_encontrado_data->signoNome); ?>" 
+                             class="img-fluid rounded mb-3" style="max-height: 200px;">
+                        <p><?php echo htmlspecialchars($signo_encontrado_data->descricao); ?></p>
                     </div>
                     <?php
                 } else {
